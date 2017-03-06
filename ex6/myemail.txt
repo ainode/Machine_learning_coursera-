@@ -1,0 +1,33 @@
+
+The look of the contract is good. 
+
+Here is the text for relief pharmacist contract:
+
+1- HPR Consulting Group will pay our the pharmacist immediately after receiving the invoice and signed timesheet from the pharmacist. 
+2- The Pharmacist hereby declares that you are a licensed pharmacist with good standing with local pharmacy licensing authorities.
+3- The Pharmacist hereby agrees to abide by the client's policy related to store procedures, customer service and ethics.
+4- HPR Consulting Group may have to withhold part of the payment, in order to submit  to Canada Custom And Revenue Agency, if applicable.
+5- The Pharmacist agrees not to accept any assignment directly or indirectly from the Client for a period of eight months unless approved by 
+     HPR Consulting Group. This includes part time and full time employment.
+6- The Pharmacist agrees to treat all click the Clients' informations, as confidential.
+7- The Pharmacist agrees to give a written notice 14 days prior to the commencement of the assignment, in case you want to terminate the assignment. 
+    In case HPR Consulting Group needs to book a flight, reserve a hotel or rent a car, the notice should be given 30 days in advance.          
+8- HPR Consulting Group may terminate remove the agreement with 14 days notice prior to the commencement of the assignment.
+9- HPR Consulting Group or the Client can terminate this agreement, if the Pharmacist violates any of the terms of the agreement or the client 
+    is not satisfied by the service visit of the Pharmacist.
+10-This is a binding agreement after it is signed by all parties and the copy and facsimile are treated the same as original.
+
+ 
+for i=1:num_users,
+	idx = find(R(:,i)==1),
+	Xtemp = X(idx,:),
+	Ytemp = Y(idx,i),
+	Theta_grad(i,:) = (Xtemp*Theta(i,:)' - Ytemp)'*Xtemp,
+end;
+
+for i=1:num_movies,
+	idx = find(R(i,:)==1),
+	Thetatemp = Theta(idx,:),
+	Ytemp = Y(i,idx),
+	X_grad(i,:) = (X(i,:)*Thetatemp' - Ytemp)*Thetatemp,
+end;
